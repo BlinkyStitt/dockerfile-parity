@@ -39,7 +39,7 @@ if [ "$1" = 'parity' ]; then
     if [ -n "$PARITY_PEER" ]; then
         echo $PARITY_PEER > "$HOME/reserved_peers"
 
-        set -- "$@" --reserved_peers "$HOME/reserved_peers"
+        set -- "$@" --reserved-peers "$HOME/reserved_peers"
     fi
 
     # TODO: optional numactl
