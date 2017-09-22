@@ -22,7 +22,7 @@ RUN set -eux; \
     rm "$PARITY_DEB"
 
 RUN mkdir -p /home/abc/.local/share/io.parity.ethereum; \
-    chown -R abc:abc /etc/tor/torsocks.conf /home/abc/.local/
+    chown -R abc:abc /home/abc/.local/
 
 USER abc
 ENV HOME /home/abc
