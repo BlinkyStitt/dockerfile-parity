@@ -21,7 +21,6 @@ Example docker-compose.yml for a fast client:
           - "30303:30303/tcp"  # p2p
           - "30303:30303/udp"  # p2p discovery
         command:
-          --pruning fast
           --jsonrpc-interface all
           --jsonrpc-hosts localhost:8545
           --ui-interface all
