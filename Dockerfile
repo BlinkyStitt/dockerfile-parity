@@ -3,7 +3,6 @@ FROM bwstitt/ubuntu:16.04
 
 RUN docker-apt-install \
     ca-certificates \
-    torsocks \
     wget
 
 ENTRYPOINT ["/entrypoint.sh"]
