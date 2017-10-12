@@ -7,11 +7,11 @@ RUN docker-apt-install \
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-ENV PARITY_VERSION 1.7.2
+ENV PARITY_VERSION 1.7.4
 ENV PARITY_PACKAGE parity_${PARITY_VERSION}_amd64
 ENV PARITY_DEB ${PARITY_PACKAGE}.deb
-ENV PARITY_RELEASE http://parity-downloads-mirror.parity.io/v${PARITY_VERSION}/x86_64-unknown-linux-gnu/${PARITY_DEB}
-ENV PARITY_SHA256 4c82d7e8a9d53b0020cbc761c39a8f889672093d47b6016516bedc070149eca7
+ENV PARITY_RELEASE https://parity-downloads-mirror.parity.io/v${PARITY_VERSION}/x86_64-unknown-linux-gnu/${PARITY_DEB}
+ENV PARITY_SHA256 d382f38ff4c68942729255408d3f09c20df789d46ae6f63e6721178558a96360
 
 # TODO: verify checksum
 RUN set -eux; \
